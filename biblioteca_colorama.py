@@ -25,10 +25,10 @@ def cor_por_nivel(nivel):
     else:
         return Fore.WHITE  # padrão
 
-# Exemplo: solicitar nível ao usuário
+# Solicitar nível ao usuário
 nivel_atual = int(input("Informe o nível do reservatório (1 a 5): "))
 
-# Verifica se o nível é válido
+# Verificar se o nível é válido
 if 1 <= nivel_atual <= 5:
     mensagem = niveis[nivel_atual - 1]
     cor = cor_por_nivel(nivel_atual)
